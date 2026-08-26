@@ -12,7 +12,7 @@ Requiere Python 3.10 o superior.
 
 ```bash
 # Desde el repositorio publicado
-python -m pip install "quipu-ubl @ git+https://github.com/Adrinoaimar/quipu-ubl.git@v0.1.0"
+python -m pip install "quipu-ubl @ git+https://github.com/Adrinoaimar/quipu-ubl.git@v0.2.0"
 latam-einvoice --version
 
 # En GitHub Actions
