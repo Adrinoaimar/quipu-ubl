@@ -26,6 +26,9 @@ jobs:
 
   publish:
     needs: build
+    # Enable after configuring PyPI Trusted Publishing and repository variable
+    # PYPI_TRUSTED_PUBLISHER=true. This keeps releases green before setup.
+    if: ${{ vars.PYPI_TRUSTED_PUBLISHER == 'true' }}
     runs-on: ubuntu-latest
     environment:
       name: pypi

@@ -54,7 +54,7 @@ if not result.valid:
         print(issue.code, issue.message)
 ```
 
-La publicación en PyPI se prepara mediante GitHub Actions y Trusted Publishing. Hasta configurar el publisher en PyPI, instala desde GitHub o clona el repositorio.
+La publicación en PyPI se prepara mediante GitHub Actions y Trusted Publishing. Consulta [docs/publishing.md](docs/publishing.md) para activar el publisher. Hasta entonces, instala desde GitHub o clona el repositorio.
 
 La idea toma referencias públicas de estándares OASIS UBL y del ecosistema de proyectos como [Greenter](https://github.com/thegreenter/greenter), OpenUBL y DIAN Kit. No se copia código ni datos de esos proyectos.
 
