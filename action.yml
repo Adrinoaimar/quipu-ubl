@@ -1,0 +1,21 @@
+name: Quipu UBL validation
+description: Validate UBL Invoice XML offline in GitHub Actions
+inputs:
+  files:
+    description: Space-separated XML paths to validate
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+    - name: Install Quipu UBL
+      shell: bash
+      run: python -m pip install .
+    - name: Validate XML
+      shell: bash
+      env:
+        QUIPU_FILES: ${{ inputs.files }}
+      run: latam-einvoice validate $QUIPU_FILES

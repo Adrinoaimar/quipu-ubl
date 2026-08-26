@@ -15,6 +15,9 @@ Requiere Python 3.10 o superior.
 python -m pip install "quipu-ubl @ git+https://github.com/Adrinoaimar/quipu-ubl.git@v0.1.0"
 latam-einvoice --version
 
+# En GitHub Actions
+# Consulta docs/github-action.md para el workflow completo.
+
 # Para desarrollo local (después de clonar)
 python -m pip install -e ".[test]"
 latam-einvoice validate examples/valid-invoice.xml
@@ -37,6 +40,8 @@ Las reglas son intencionadamente mínimas. Perfiles de país pueden añadirse si
 ## Diseño y comunidad
 
 Resultados tienen códigos estables (`ROOT_NAMESPACE`, `REQUIRED_FIELD_MISSING`, etc.) y formato JSON para CI. No se hacen llamadas de red ni se envían documentos. Issues y pull requests son bienvenidos; consulta [CONTRIBUTING.md](CONTRIBUTING.md).
+
+También puedes usar la [GitHub Action](docs/github-action.md) para bloquear PRs con XML UBL estructuralmente inválido.
 
 La idea toma referencias públicas de estándares OASIS UBL y del ecosistema de proyectos como [Greenter](https://github.com/thegreenter/greenter), OpenUBL y DIAN Kit. No se copia código ni datos de esos proyectos.
 
