@@ -1,5 +1,7 @@
 # Quipu UBL
 
+[![CI](https://github.com/Adrinoaimar/quipu-ubl/actions/workflows/ci.yml/badge.svg)](https://github.com/Adrinoaimar/quipu-ubl/actions/workflows/ci.yml)
+
 Validador offline, pequeño y reproducible para una línea base de facturas electrónicas UBL. El comando `latam-einvoice` ayuda a detectar errores estructurales antes de enviar un documento a un proveedor o autoridad.
 
 > Quipu UBL no emite, firma ni certifica comprobantes. No reemplaza validación tributaria de SUNAT, DIAN, SAT u otra autoridad.
@@ -9,6 +11,11 @@ Validador offline, pequeño y reproducible para una línea base de facturas elec
 Requiere Python 3.10 o superior.
 
 ```bash
+# Desde el repositorio publicado
+python -m pip install "quipu-ubl @ git+https://github.com/Adrinoaimar/quipu-ubl.git@v0.1.0"
+latam-einvoice --version
+
+# Para desarrollo local (después de clonar)
 python -m pip install -e ".[test]"
 latam-einvoice validate examples/valid-invoice.xml
 latam-einvoice validate examples/invalid-invoice.xml --json
