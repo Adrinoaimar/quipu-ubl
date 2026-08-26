@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 — 2026-08-26
+
+- Corrige instalación de la GitHub Action desde el checkout de la action, no desde el repositorio consumidor.
+
 ## 0.2.0 — 2026-08-26
 
 - GitHub Action reutilizable para validar XML en pull requests.

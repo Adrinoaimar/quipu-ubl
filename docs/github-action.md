@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Adrinoaimar/quipu-ubl@v0.2.0
+      - uses: Adrinoaimar/quipu-ubl@v0.2.1
         with:
           files: examples/valid-invoice.xml
 ```
 
-La action instala el paquete localmente y ejecuta validación offline. Usa rutas sin espacios o cita una única ruta cuando tu shell lo requiera. Fija una versión (`@v0.2.0`) para builds reproducibles.
+La action instala Quipu UBL desde su propio checkout y ejecuta validación offline. Usa rutas sin espacios o cita una única ruta cuando tu shell lo requiera. Fija una versión (`@v0.2.1`) para builds reproducibles.

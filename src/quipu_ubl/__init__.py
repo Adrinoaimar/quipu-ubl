@@ -1,6 +1,6 @@
 """Offline UBL conformance checks for Latin American e-invoicing projects."""
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 from .validator import ValidationIssue, ValidationResult, validate_xml
 
