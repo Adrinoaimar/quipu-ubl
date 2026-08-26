@@ -1,0 +1,35 @@
+name: Bug de validación
+description: Reporta un resultado incorrecto o un fallo reproducible.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No adjuntes XML reales, certificados, credenciales ni PII. Usa una fixture mínima sanitizada.
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducción mínima
+      description: Comando ejecutado y XML sintético mínimo.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado obtenido
+    validations:
+      required: true

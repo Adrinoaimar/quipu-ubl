@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Preguntas y ayuda
+    url: https://github.com/Adrinoaimar/quipu-ubl/discussions
+    about: Usa Discussions para preguntas, ejemplos y casos de integración.

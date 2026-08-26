@@ -1,0 +1,25 @@
+name: Propuesta de mejora
+description: Propón una regla, integración o mejora de experiencia.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: ¿Qué necesidad concreta resuelve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibilidad y seguridad
+      description: Impacto en reglas existentes, offline y datos sensibles.
+    validations:
+      required: true

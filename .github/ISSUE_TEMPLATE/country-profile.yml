@@ -1,0 +1,25 @@
+name: Perfil de país
+description: Propón reglas nacionales con fuentes públicas y fixtures sanitizadas.
+title: "profile: "
+labels: ["country-profile", "help wanted"]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: País y autoridad
+      placeholder: "Perú — SUNAT"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Fuentes públicas
+      description: Enlaces normativos o técnicos; no incluyas credenciales ni datos privados.
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Reglas y fixtures propuestos
+    validations:
+      required: true

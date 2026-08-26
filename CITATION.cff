@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Quipu UBL"
+message: "Si usas Quipu UBL en investigación o software, cita este repositorio."
+type: software
+authors:
+  - name: "Quipu UBL contributors"
+repository-code: "https://github.com/Adrinoaimar/quipu-ubl"
+license: MIT
+version: 0.1.0
+date-released: 2026-08-26

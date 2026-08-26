@@ -43,6 +43,19 @@ Resultados tienen códigos estables (`ROOT_NAMESPACE`, `REQUIRED_FIELD_MISSING`,
 
 También puedes usar la [GitHub Action](docs/github-action.md) para bloquear PRs con XML UBL estructuralmente inválido.
 
+## API Python
+
+```python
+from quipu_ubl import validate_xml
+
+result = validate_xml(xml_bytes, source="invoice.xml")
+if not result.valid:
+    for issue in result.issues:
+        print(issue.code, issue.message)
+```
+
+La publicación en PyPI se prepara mediante GitHub Actions y Trusted Publishing. Hasta configurar el publisher en PyPI, instala desde GitHub o clona el repositorio.
+
 La idea toma referencias públicas de estándares OASIS UBL y del ecosistema de proyectos como [Greenter](https://github.com/thegreenter/greenter), OpenUBL y DIAN Kit. No se copia código ni datos de esos proyectos.
 
 ## English
