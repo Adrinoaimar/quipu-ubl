@@ -25,7 +25,7 @@ Código de salida: `0` si todos los documentos son válidos, `1` si hay hallazgo
 - Hijos obligatorios: `ID`, `IssueDate`, `AccountingSupplierParty`, `AccountingCustomerParty` y `LegalMonetaryTotal`.
 - Declaraciones `DOCTYPE` y `ENTITY` rechazadas para mantener validación offline segura.
 
-Las reglas son intencionadamente mínimas. Perfiles de país pueden añadirse sin cambiar el núcleo.
+Las reglas son intencionadamente mínimas. Perfiles de país pueden añadirse sin cambiar el núcleo. Consulta el contrato exacto en [SPEC.md](SPEC.md).
 
 ## Diseño y comunidad
 
